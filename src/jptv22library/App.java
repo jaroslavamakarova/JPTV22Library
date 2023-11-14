@@ -52,6 +52,11 @@ public class App {
             System.out.println("9. Add a copy of an existing book in the library");
             System.out.print("Enter number task: ");
             int task = InputFromKeyboard.inputNumberFromRange(0,9);
+            System.out.printf("Selected task %d, continue? (y/n): ",task);
+            String continueRun = InputFromKeyboard.inputSymbolYesOrNo();
+            if(continueRun.equals("n")){
+                continue;
+            }
             switch (task) {
                 case 0:
                     repeat = false;

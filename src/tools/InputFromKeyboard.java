@@ -7,6 +7,8 @@ import java.util.Scanner;
  * @author Melnikov
  */
 public class InputFromKeyboard {
+        
+
     /**
      * Tools for input numbers  from keyboard
      * Repeats input if the entered number is not a number 
@@ -49,6 +51,18 @@ public class InputFromKeyboard {
         }while(repeat);
         return number;
     }
-    
-    
+
+    public static String inputSymbolYesOrNo() {
+        Scanner scanner = new Scanner(System.in);
+        String symbol = "n";
+        do{
+            symbol = scanner.nextLine();
+            if (symbol.equals("n") || symbol.equals("y")){
+                return symbol;
+            }
+            System.out.println("For continue press \"y\", to exsit press \"n\"");
+        }while(true);
+    } 
 }
+
+
