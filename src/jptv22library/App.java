@@ -49,7 +49,7 @@ public class App {
             System.out.println("6. Return book");
             System.out.println("7. Print list readed books");
             System.out.println("8. Ranking of books being read");
-            System.out.println("9. Most Reading Reader");
+            System.out.println("9. Add a copy of an existing book in the library");
             System.out.print("Enter number task: ");
             int task = InputFromKeyboard.inputNumberFromRange(0,9);
             switch (task) {
@@ -89,14 +89,13 @@ public class App {
                     historyManager.printRankingOfBooksBeingRead(this.histories);
                     break;
                 case 9:
-                    System.out.println("Implementation expected");
+                    bookManager.CopyOfAnExistingBookInTheLibrary(books);
+                    saveManager.saveBooks(books);
                     break;
                 default:
                     System.out.println("Select number from list tasks!");
             }
             System.out.println("-------------------------");
         }while(repeat);
-    }
-
-    
+    }    
 }

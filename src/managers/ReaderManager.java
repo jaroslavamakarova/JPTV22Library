@@ -44,7 +44,5 @@ public class ReaderManager {
             count++;
         }
         return count;
-    }
-    
-    
+    }   
 }

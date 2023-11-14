@@ -82,8 +82,5 @@ public class Reader implements Serializable{
                 + ", " + lastname 
                 + ", " + phone 
                 + ' ';
-    }
-    
-    
-    
+    }   
 }

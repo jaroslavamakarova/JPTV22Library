@@ -99,7 +99,5 @@ public class History implements Serializable{
                 + ", give Book To Reader Date " + giveBookToReaderDate 
                 + ", returnBoo =" + returnBook 
                 + ' ';
-    }
-    
-    
+    } 
 }

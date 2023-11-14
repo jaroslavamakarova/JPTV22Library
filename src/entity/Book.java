@@ -120,5 +120,4 @@ public class Book implements Serializable{
         }
         return Arrays.deepEquals(this.authors, other.authors);
     }
-
 }
